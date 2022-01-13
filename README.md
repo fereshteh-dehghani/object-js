@@ -1,1 +1,0 @@
-# exercise-object-js

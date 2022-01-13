@@ -1,5 +1,6 @@
 /*
-Create a function that returns any of the items you can afford in the store with the money you have in your wallet. Sort the list in alphabetical order.
+Create a function that returns any of the items you can afford in the store with the
+ money you have in your wallet. Sort the list in alphabetical order.
 
 Examples
 itemsPurchased({
