@@ -1,1 +1,1 @@
-# object-js
+# exercise-object-js
