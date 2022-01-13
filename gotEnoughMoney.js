@@ -27,3 +27,26 @@ itemsPurchased({
 "$1") ➞ "Nothing"
 Notes
 Return "Nothing" if you can't afford anything from the store. */
+function itemsPurchased(obj,money){
+  let kala=[];
+  for(let key in obj){
+  let changedMoney= parseFloat( obj[key].slice(1).replaceAll(',',''));
+ if( parseFloat(money.slice(1))>=changedMoney){
+  kala.unshift(key)
+ } 
+  }if(kala.length>=1){
+    return kala.sort();
+  }else{
+    return "NOTHING!";
+  }
+    
+  
+ 
+
+}
+console.log(itemsPurchased({
+  Phone: "$999",
+  Speakers: "$300",
+  Laptop: "$5,000",
+  PC: "$1200"},
+"$10") );
