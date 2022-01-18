@@ -31,3 +31,28 @@ The return object must return the values ordered from lowest
  to highest so your answers can match the test answers.
 
  */
+function combineObject(obj1,obj2){
+  let combineObj={...obj1,...obj2};
+  for (let key1 in obj1){
+    for(let key2 in obj2){
+      if(key1===key2){
+        combineObj[key1]= obj1[key1]+obj2[key2];
+      }
+      
+    }
+  }
+  return combineObj;
+}
+const user1 = {
+  rental: 12000,
+  powerPlant: 70000,
+  
+}
+
+const user2 = {
+  teaching: 40000,
+  rental: 10000
+}
+
+let user1User2=combineObject(user1,user2);
+console.log(user1User2);
