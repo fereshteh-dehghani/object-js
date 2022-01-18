@@ -1,5 +1,7 @@
 /* 
-Create a function that takes an object and returns an object of all entries having unique marks. If the marks are the same, take who is eldest.
+Create a function that takes an object and returns an object of all
+ entries having unique marks. If the marks are the same, take who is
+ eldest.
 
 Examples
 getObject({

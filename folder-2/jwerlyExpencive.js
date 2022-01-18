@@ -18,3 +18,17 @@ mostExpensive({
 }) ➞ "The most expensive one is the Diamond Ring"
 
 */
+function mostExpensive(obj) {
+  const price = Object.values(obj);
+  const maxPrice = Math.max(...price);
+  for (const key in obj) {
+    if (obj[key] === maxPrice) {
+      return key;
+    }
+  }
+}
+console.log(mostExpensive({
+  "Silver Bracelet": 280,
+  "Gemstone Earrings": 180,
+  "Diamond Ring": 3500
+}));
